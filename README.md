@@ -1,2 +1,2 @@
-# goit-markup-hw-06
-https://pbohdanov.github.io/goit-markup-hw-06/
+# goit-markup-hw-07
+https://pbohdanov.github.io/goit-markup-hw-07/
