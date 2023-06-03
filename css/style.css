@@ -33,29 +33,64 @@ body {
   font-family: 'Roboto', sans-serif;
   color: var(--color-address-nav-link);
   background-color: var(--background-color);
+  margin: 0;
+  display: block;
 }
 
 * {
   margin: 0;
 }
-body {
-  margin: 0;
-  display: block;
+ul,
+ol {
+  padding: 0;
 }
 
 .container {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media screen and (min-width: 428px) {
+  .container {
+    max-width: 428px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+/* .container {
   width: 1158px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-}
+} */
 
 img {
   display: block;
 }
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
 /*=============== Header =============== */
 
-.page-header {
+/* .page-header {
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -65,7 +100,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
+} */
 
 /* Logo */
 .logo {
@@ -76,14 +111,45 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-right: 76px;
+  /* margin-right: 76px; */
 }
 .logo-right-part {
   color: var(--logo-right-part);
 }
 
-/* Navigation list */
+.menu {
+  display: none;
+}
+.address-nav-list {
+  display: none;
+}
 
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-header {
+  padding-top: 24px;
+  padding-bottom: 22px;
+}
+.menu-hamburger {
+  stroke: #2e2f42;
+  /* stroke-width: 3px;
+  stroke-linecap: round;
+  stroke-linejoin: round; */
+}
+
+.mobile-menu {
+  /* margin-left: auto; */
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  line-height: 0;
+}
+/* Navigation list */
+/* 
 .menu {
   display: flex;
   gap: 40px;
@@ -97,13 +163,6 @@ img {
   align-items: center;
 }
 
-.link {
-  text-decoration: none;
-}
-
-.list {
-  list-style: none;
-}
 
 .nav-list {
   display: block;
@@ -139,10 +198,10 @@ img {
   left: 0;
   height: 4px;
   bottom: -1px;
-}
+} */
 
 /* Address navigation section */
-
+/* 
 .address-nav-list {
   font-style: normal;
   margin-left: auto;
@@ -170,7 +229,7 @@ img {
 
 .address-nav-link:focus {
   color: var(--color-address-nav-link-focus);
-}
+} */
 
 /* =========== MAIN CONTENT START========== */
 
