@@ -54,14 +54,14 @@ ol {
 }
 
 .container {
+  width: 100%;
   padding-left: 16px;
   padding-right: 16px;
 }
 @media screen and (min-width: 428px) {
   .container {
     max-width: 428px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
   }
 }
 @media screen and (min-width: 768px) {
@@ -140,6 +140,9 @@ img {
 .page-header {
   padding-top: 24px;
   padding-bottom: 22px;
+  border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .menu-hamburger {
@@ -277,6 +280,60 @@ img {
 }
 
 /* ===== Social links end ===== */
+
+/* ========== Hero section ========== */
+.hero-section {
+  background-color: var(--background-color-hero);
+  padding: 112px 0;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
+  max-width: 1440px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+  max-width: 496px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  text-align: center;
+  color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 72px;
+}
+.button {
+  display: block;
+  margin: auto;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  background-color: #4d5ae5;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button:hover,
+.button:focus {
+  background-color: #404bbf;
+}
 
 /* Navigation list */
 /* 
