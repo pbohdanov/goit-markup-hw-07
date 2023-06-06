@@ -39,7 +39,11 @@
             </li>
           </ul>
         </nav>
-        <button type="button" class="mobile-menu">
+        <button
+          type="button"
+          class="mobile-menu js-open-menu"
+          aria-expanded="false"
+        >
           <svg class="menu-hamburger" width="32" height="22">
             <use href="./images/icons.svg#icon-menu-hamburger"></use>
           </svg>
@@ -60,13 +64,116 @@
           </ul>
         </address>
       </div>
+
+      <!-- Hamburger mobile menu -->
+
+      <div class="hamburger-mobile-menu js-menu-container">
+        <div class="container hamburger-menu-container">
+          <button class="hamburger-menu-close-btn js-close-menu">
+            <svg class="hamburger-menu-close-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="hamburger-menu-nav">
+            <a href="./index.html" class="ham-logo logo link"
+              >Web<span class="logo-right-part">Studio</span></a
+            >
+            <ul class="hamburger-menu list">
+              <li>
+                <a
+                  href="./index.html"
+                  class="hamburger-nav-list link ham-active-page"
+                  >Studio</a
+                >
+              </li>
+              <li>
+                <a href="./portfolio.html" class="hamburger-nav-list link"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a href="" class="hamburger-nav-list link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="hamburger-address-nav-list">
+            <ul class="hamburger-address-menu list">
+              <li>
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="hamburger-address-nav-link link hamburger-address-nav-link-mail"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a
+                  href="tel:+110001111111"
+                  class="hamburger-address-nav-link link hamburger-address-nav-link-tel"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+
+          <ul class="social-link-list list link">
+            <li class="social-link-item">
+              <a href="" class="social-link-icon">
+                <svg
+                  class="social-icon"
+                  aria-label="instagramm-icon"
+                  width="16"
+                  height="16"
+                >
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-link-item">
+              <a href="" class="social-link-icon">
+                <svg
+                  class="social-icon"
+                  aria-label="twitter-icon"
+                  width="16"
+                  height="16"
+                >
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-link-item">
+              <a href="" class="social-link-icon">
+                <svg
+                  class="social-icon"
+                  aria-label="facebook-icon"
+                  width="16"
+                  height="16"
+                >
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-link-item">
+              <a href="" class="social-link-icon">
+                <svg
+                  class="social-icon"
+                  aria-label="linkedin-icon"
+                  width="16"
+                  height="16"
+                >
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
 
     <!-- =========== Main content start ==========  -->
-    <!-- <main> -->
-    <!--- Hero Section 1 start -->
+    <main>
+      <!--- Hero Section 1 start -->
 
-    <!-- <section class="hero-section">
+      <!-- <section class="hero-section">
         <div class="container">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
           <button type="button" class="button" data-modal-open>
@@ -75,9 +182,9 @@
         </div>
       </section> -->
 
-    <!-- ========== Section 2 - start ========== -->
+      <!-- ========== Section 2 - start ========== -->
 
-    <!-- <section class="features">
+      <!-- <section class="features">
         <div class="container">
           <h2 class="visually-hidden">Features</h2>
           <ul class="features-list list">
@@ -153,9 +260,9 @@
         </div>
       </section> -->
 
-    <!-- ========== Section 3 - start ========== -->
+      <!-- ========== Section 3 - start ========== -->
 
-    <!-- <section class="work-examples">
+      <!-- <section class="work-examples">
         <div class="container">
           <h2 class="what-are-we-doing">What are we doing</h2>
           <ul class="work-examples-list list">
@@ -184,9 +291,9 @@
         </div>
       </section> -->
 
-    <!-- ========== Section 4 - start ========== -->
+      <!-- ========== Section 4 - start ========== -->
 
-    <!-- <section class="section-team-list">
+      <!-- <section class="section-team-list">
         <div class="container">
           <h2 class="section-header-title">Our Team</h2>
           <ul class="team list">
@@ -442,8 +549,8 @@
         </div>
       </section> -->
 
-    <!-- ========== Section 5 - start ========== -->
-    <!-- <section class="customer-section">
+      <!-- ========== Section 5 - start ========== -->
+      <!-- <section class="customer-section">
         <div class="container">
           <h2 class="customer-section-title">Customers</h2>
           <ul class="customers-list list">
@@ -523,8 +630,8 @@
             </li>
           </ul>
         </div>
-      </section>
-    </main> -->
+      </section> -->
+    </main>
 
     <!-- =========== FOOTER START ==========  -->
 
@@ -731,6 +838,7 @@
     </div> -->
 
     <!-- =========== Script start ==========  -->
+    <script src="./js/mobile-menu.js"></script>
     <!-- <script src="./js/modal.js"></script> -->
   </body>
 </html>
