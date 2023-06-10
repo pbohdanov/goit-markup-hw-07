@@ -74,7 +74,26 @@
               <use href="./images/icons.svg#icon-close"></use>
             </svg>
           </button>
-          <nav class="hamburger-menu-nav">
+          <div class="nav-ham">
+            <ul class="hamburger-menu list">
+              <li>
+                <a
+                  href="./index.html"
+                  class="hamburger-nav-list link ham-active-page"
+                  >Studio</a
+                >
+              </li>
+              <li>
+                <a href="./portfolio.html" class="hamburger-nav-list link"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a href="" class="hamburger-nav-list link">Contacts</a>
+              </li>
+            </ul>
+          </div>
+          <!-- <nav class="hamburger-menu-nav">
             <a href="./index.html" class="ham-logo logo link"
               >Web<span class="logo-right-part">Studio</span></a
             >
@@ -95,8 +114,8 @@
                 <a href="" class="hamburger-nav-list link">Contacts</a>
               </li>
             </ul>
-          </nav>
-          <address class="hamburger-address-nav-list">
+          </nav> -->
+          <div class="address-ham">
             <ul class="hamburger-address-menu list">
               <li>
                 <a
@@ -165,6 +184,76 @@
               </a>
             </li>
           </ul>
+          </div>
+          <!-- <address class="hamburger-address-nav-list">
+            <ul class="hamburger-address-menu list">
+              <li>
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="hamburger-address-nav-link link hamburger-address-nav-link-mail"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a
+                  href="tel:+110001111111"
+                  class="hamburger-address-nav-link link hamburger-address-nav-link-tel"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+
+          <ul class="hamburger-social-link-list list link">
+            <li class="hamburger-social-link-item">
+              <a href="" class="hamburger-social-link-icon">
+                <svg
+                  class="hamburger-social-icon"
+                  aria-label="instagramm-icon"
+                  width="16"
+                  height="16"
+                >
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="hamburger-social-link-item">
+              <a href="" class="hamburger-social-link-icon">
+                <svg
+                  class="hamburger-social-icon"
+                  aria-label="twitter-icon"
+                  width="16"
+                  height="16"
+                >
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="hamburger-social-link-item">
+              <a href="" class="hamburger-social-link-icon">
+                <svg
+                  class="hamburger-social-icon"
+                  aria-label="facebook-icon"
+                  width="16"
+                  height="16"
+                >
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="hamburger-social-link-item">
+              <a href="" class="hamburger-social-link-icon">
+                <svg
+                  class="hamburger-social-icon"
+                  aria-label="linkedin-icon"
+                  width="16"
+                  height="16"
+                >
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul> -->
         </div>
       </div>
     </header>
@@ -294,64 +383,16 @@
           <h2 class="section-header-title">Our Team</h2>
           <ul class="team list">
             <li class="team-list">
-              <picture>
-                <!-- DESKTOP -->
-                <source
-                  srcset="
-                    ./images/our-team/our-team-1-mark.webp    1x,
-                    ./images/our-team/our-team-1-mark@2x.webp 2x
-                  "
-                  media="(min-width: 1158px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="
-                    ./images/our-team/our-team-1-mark.jpg    1x,
-                    ./images/our-team/our-team-1-mark@2x.jpg 2x
-                  "
-                  media="(min-width: 1158px)"
-                />
-
-                <!-- TABLET -->
-                <source
-                  srcset="
-                    ./images/our-team/our-team-1-mark.webp    1x,
-                    ./images/our-team/our-team-1-mark@2x.webp 2x
-                  "
-                  media="(min-width: 768px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="
-                    ./images/our-team/our-team-1-mark.jpg    1x,
-                    ./images/our-team/our-team-1-mark@2x.jpg 2x
-                  "
-                  media="(min-width: 768px)"
-                />
-
-                <!-- MOBILE -->
-                <source
-                  srcset="
-                    ./images/our-team/our-team-1-mark.webp    1x,
-                    ./images/our-team/our-team-1-mark@2x.webp 2x
-                  "
-                  media="(min-width: 428px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="
-                    ./images/our-team/our-team-1-mark.jpg    1x,
-                    ./images/our-team/our-team-1-mark@2x.jpg 2x
-                  "
-                  media="(min-width: 428px)"
-                />
-                <img
-                  src="./images/our-team/mark-guerrero-mobile.jpg"
-                  alt="Mark Guerrero"
-                  width="264"
-                  height="260"
-                />
-              </picture>
+              <img
+                srcset="
+                  ./images/our-team/our-team-1-mark.jpg    1x,
+                  ./images/our-team/our-team-1-mark@2x.jpg 2x
+                "
+                src="./images/our-team/our-team-1-mark.jpg"
+                alt="Mark Guerrero"
+                width="264"
+                height="260"
+              />
               <div class="title-text">
                 <h3 class="team-list-title">Mark Guerrero</h3>
                 <p class="team-list-text">Product Designer</p>
@@ -596,7 +637,90 @@
           </ul>
         </div>
       </section>
-      -->
+
+      <!-- ========== Section 5 - start ========== -->
+
+      <section class="customer-section">
+        <div class="container">
+          <h2 class="customer-section-title">Customers</h2>
+          <ul class="customers-list list">
+            <li class="customer-item">
+              <a href="" class="customer-link-icon link">
+                <svg
+                  class="customer-icon"
+                  aria-label="customer ya&co"
+                  width="104"
+                  height="56"
+                >
+                  <use href="./images/icons.svg#icon-company1-ya-co"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="customer-item">
+              <a href="" class="customer-link-icon link">
+                <svg
+                  class="customer-icon"
+                  aria-label="customer tagline"
+                  width="104"
+                  height="56"
+                >
+                  <use href="./images/icons.svg#icon-company2-tagline"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="customer-item">
+              <a href="" class="customer-link-icon link">
+                <svg
+                  class="customer-icon"
+                  aria-label="customer company"
+                  width="104"
+                  height="56"
+                >
+                  <use href="./images/icons.svg#icon-company3"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="customer-item">
+              <a href="" class="customer-link-icon link">
+                <svg
+                  class="customer-icon"
+                  aria-label="customer foster peters"
+                  width="104"
+                  height="56"
+                >
+                  <use
+                    href="./images/icons.svg#icon-company4-foster-peters"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="customer-item">
+              <a href="" class="customer-link-icon link">
+                <svg
+                  class="customer-icon"
+                  aria-label="customer brand"
+                  width="104"
+                  height="56"
+                >
+                  <use href="./images/icons.svg#icon-company5-brand"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="customer-item">
+              <a href="" class="customer-link-icon link">
+                <svg
+                  class="customer-icon"
+                  aria-label="customer tag"
+                  width="104"
+                  height="56"
+                >
+                  <use href="./images/icons.svg#icon-company6-tag"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
 
       <!--- Hero Section 1 start -->
 
@@ -1059,6 +1183,95 @@
         </div>
       </section> -->
     </main>
+    <!-- =========== FOOTER START ==========  -->
+
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-logo-div">
+          <a href="./index.html" class="footer-logo logo link"
+            >Web<span class="footer-logo-right-part">Studio</span></a
+          >
+          <p class="footer-text">
+            Increase the flow of customers and sales for your business with
+            digital marketing & growth solutions.
+          </p>
+        </div>
+        <!-- ========== Footer social link =========== -->
+        <div class="footer-social-media">
+          <p class="footer-text-social">Social media</p>
+          <ul class="footer-social-link-list list link">
+            <li class="footer-social-link-item">
+              <a href="" class="footer-social-link-icon">
+                <svg
+                  class="footer-social-icon"
+                  aria-label="instagramm-icon"
+                  width="24"
+                  height="24"
+                >
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-link-item">
+              <a href="" class="footer-social-link-icon">
+                <svg
+                  class="footer-social-icon"
+                  aria-label="twitter-icon"
+                  width="24"
+                  height="24"
+                >
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-link-item">
+              <a href="" class="footer-social-link-icon">
+                <svg
+                  class="footer-social-icon"
+                  aria-label="facebook-icon"
+                  width="24"
+                  height="24"
+                >
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-link-item">
+              <a href="" class="footer-social-link-icon">
+                <svg
+                  class="footer-social-icon"
+                  aria-label="linkedin-icon"
+                  width="24"
+                  height="24"
+                >
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-subscribe">
+          <p class="footer-subscribe-title">Subscribe</p>
+          <form class="footer-subscribe-form">
+            <label class="footer-subscribe-label" for="user-subscribe">
+              <input
+                class="footer-subscribe-input"
+                type="email"
+                id="user-subscribe"
+                placeholder="E-mail"
+                name="user-subscribe"
+              />
+            </label>
+            <button class="button subscribe-button" type="submit">
+              Subscribe
+              <svg class="subscribe-button-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
 
     <!-- =========== FOOTER START ==========  -->
 
@@ -1153,7 +1366,7 @@
     <!-- =========== Backdrop start ==========  -->
     <!-- class="backdrop is-hidden" -->
 
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-close-icon" width="8" height="8">
@@ -1262,10 +1475,10 @@
           <button class="button">Send</button>
         </form>
       </div>
-    </div> -->
+    </div>
 
     <!-- =========== Script start ==========  -->
     <script src="./js/mobile-menu.js"></script>
-    <!-- <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
