@@ -871,6 +871,14 @@ img {
   .footer-text-social {
     text-align: left;
   }
+
+  /* Portfolio */
+  .projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 24px;
+  }
 }
 
 /*========== Desktop ==========  */
@@ -1940,6 +1948,32 @@ img {
 .project-list:hover .portfolio-project-card-img-overlay,
 .project-list:focus .portfolio-project-card-img-overlay {
   transform: translateY(0%);
+}
+.active-page {
+  position: relative;
+  color: #404bbf;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.active-page::after {
+  position: absolute;
+  content: '';
+  display: block;
+  background-color: #404bbf;
+  height: 4px;
+  width: 100%;
+  border-radius: 2px;
+  left: 0;
+  height: 4px;
+  bottom: -1px;
+}
+
+@media screen and (min-width: 768px) {
+  .projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 24px;
+  }
 }
 
 /* ============== PORTFOLIO END ==============  */
