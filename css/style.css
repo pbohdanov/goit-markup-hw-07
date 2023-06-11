@@ -1021,9 +1021,9 @@ img {
     margin-bottom: 72px;
     text-align: center;
   }
-  */
-/* --- ul --- */
-.customers-list {
+
+  /* --- ul --- */
+  .customers-list {
     display: flex;
     padding-left: 0;
     gap: 24px;
