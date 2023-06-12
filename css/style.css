@@ -25,11 +25,6 @@
   --secondary-text-color: #434455;
 
   --second-background-color: #f4f4fd;
-  --button-background-color: #f4f4fd;
-  --icon-background-colour: #f4f4fd;
-  --social-link-icon-colour: #f4f4fd;
-  --footer-social-link-color: #f4f4fd;
-  --overlay-text-color: #f4f4fd;
 
   --label-color: #8e8f99;
   --customer-section-icon-color: #8e8f99;
@@ -224,7 +219,7 @@ img {
 }
 
 .hamburger-address-nav-link-mail {
-  color: var(--address-nav-link);
+  color: var(--secondary-text-color);
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
@@ -256,7 +251,7 @@ img {
 
 /* svg */
 .hamburger-social-icon {
-  fill: var(--social-link-icon-colour);
+  fill: var(--second-background-color);
   width: 24px;
   height: 24px;
 }
@@ -285,7 +280,7 @@ img {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   text-align: center;
-  color: #ffffff;
+  color: var(--background-color);
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
@@ -462,7 +457,7 @@ img {
 }
 /* svg */
 .social-icon {
-  fill: var(--social-link-icon-colour);
+  fill: var(--second-background-color);
 }
 
 /* ========== Social links end ========== */
@@ -533,7 +528,7 @@ img {
 }
 
 .footer-logo-right-part {
-  color: var(--button-background-color);
+  color: var(--second-background-color);
 }
 
 /* --- logo div --- */
@@ -547,7 +542,7 @@ img {
 }
 
 .footer-text {
-  color: var(--button-background-color);
+  color: var(--second-background-color);
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.02em;
@@ -595,7 +590,7 @@ img {
 }
 
 .footer-social-icon {
-  fill: var(--footer-social-link-color);
+  fill: var(--second-background-color);
 }
 
 .footer-subscribe {
@@ -646,7 +641,39 @@ img {
   margin-left: 16px;
 }
 
+/* ========== Modal media ========== */
+@media screen and (max-width: 427px) {
+  .modal {
+    max-width: 100%;
+  }
+}
+
+/* ========== Media hero section ========== */
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office@2x.jpg);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office@2x.jpg);
+  }
+}
+
 /* ========== Tablet section ========== */
+
 @media screen and (min-width: 768px) {
   .mobile-menu {
     display: none;
@@ -732,6 +759,16 @@ img {
     padding-top: 0;
     padding-bottom: 0;
   }
+  .main-title {
+    font-size: 56px;
+    line-height: 60px;
+    margin-bottom: 36px;
+    max-width: 496px;
+  }
+  .feature-list {
+    text-align: left;
+  }
+
   .features-list {
     display: flex;
     flex-direction: row;
@@ -780,7 +817,7 @@ img {
     margin-right: 0;
   }
   .footer-text {
-    color: var(--button-background-color);
+    color: var(--second-background-color);
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.02em;
@@ -823,13 +860,12 @@ img {
   }
 
   .footer-social-icon {
-    fill: var(--footer-social-link-color);
+    fill: var(--second-background-color);
   }
 
   .footer-subscribe-form {
     display: flex;
     flex-direction: row;
-    column-gap: 24px;
     align-content: stretch;
   }
   .footer-subscribe-title {
@@ -882,6 +918,7 @@ img {
 }
 
 /*========== Desktop ==========  */
+
 @media screen and (min-width: 1158px) {
   /* Address navigation section */
 
@@ -915,20 +952,12 @@ img {
     color: var(--color-address-nav-link-focus);
   }
   .hero-section {
-    background-color: var(--background-color-hero);
     padding: 188px 0;
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/people-office.jpg);
-    max-width: 1440px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    margin-left: auto;
-    margin-right: auto;
   }
+  .main-title {
+    margin-bottom: 48px;
+  }
+
   .features-list-icon {
     display: flex;
     align-items: center;
@@ -936,8 +965,9 @@ img {
     height: 112px;
     margin-bottom: 8px;
     border-radius: 4px;
-    background-color: var(--icon-background-colour);
+    background-color: var(--second-background-color);
   }
+
   .features-list {
     display: flex;
     gap: 24px;
@@ -970,6 +1000,7 @@ img {
   .feature-list-desc {
     line-height: 1.5;
     letter-spacing: 0.02em;
+    font-weight: 400;
   }
 
   .features-list-icon {
@@ -979,11 +1010,11 @@ img {
     height: 112px;
     margin-bottom: 8px;
     border-radius: 4px;
-    background-color: var(--icon-background-colour);
+    background-color: var(--second-background-color);
   }
   /* Section 3 */
   .work-examples {
-    display: flex;
+    display: block;
     padding-bottom: 120px;
   }
   .what-are-we-doing {
@@ -1006,6 +1037,11 @@ img {
 
   .work-example-list-width {
     width: calc((100% - 48px) / 3);
+  }
+  /* Section 4 - Our team */
+  .section-team-list {
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
   /* Section 5 */
   .customer-section {
@@ -1073,7 +1109,7 @@ img {
   }
 
   .footer-logo-right-part {
-    color: var(--button-background-color);
+    color: var(--second-background-color);
   }
 
   /* --- logo div --- */
@@ -1086,7 +1122,7 @@ img {
     margin-right: 0;
   }
   .footer-text {
-    color: var(--button-background-color);
+    color: var(--second-background-color);
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.02em;
@@ -1136,7 +1172,7 @@ img {
   }
 
   .footer-social-icon {
-    fill: var(--footer-social-link-color);
+    fill: var(--second-background-color);
   }
   .footer-subscribe {
     width: auto;
@@ -1396,7 +1432,7 @@ img {
 }
 
 .portfolio-button {
-  background-color: var(--button-background-color);
+  background-color: var(--second-background-color);
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -1453,7 +1489,7 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--overlay-text-color);
+  color: var(--second-background-color);
   padding: 40px 32px;
   background-color: #4d5ae5;
   height: 100%;
